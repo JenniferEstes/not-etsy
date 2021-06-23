@@ -5,7 +5,11 @@ import { provider } from 'react-redux'
 import thunk from 'reux-thunk'
 // gets rid of line of code starting with window.__
 import { composeWithDevTools } from 'redux-devtools-extension'
-import App from './App'
+import './App'
+import productList from './components/productList'
+import favoriteList from './components/favoriteList'
+import productList from './components/productList'
+
 
 // import './index.css'
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
