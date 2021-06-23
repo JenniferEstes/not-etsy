@@ -16,3 +16,5 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// Combined reducers into rootreducer bc can't pass multiple models into createStore
