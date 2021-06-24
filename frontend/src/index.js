@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { createStore, applyMiddleware, compose } from 'redux'
 import { provider } from 'react-redux'
-import thunk from 'reux-thunk'
+import thunk from 'redux-thunk'
 // gets rid of line of code starting with window.__
 import { composeWithDevTools } from 'redux-devtools-extension'
 import './App'
