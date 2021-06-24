@@ -8,8 +8,11 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 import rootReducer from './reducers/rootReducer'
-// import './index.css'
-const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
+import './index.css'
+
+const store = createStore(
+    rootReducer,
+    composeWithDevTools(applyMiddleware(thunk)))
 
 ReactDOM.render(
     <Provider store={store}>
