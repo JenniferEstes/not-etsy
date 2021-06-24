@@ -14,10 +14,8 @@ import rootReducer from './reducers/rootReducer'
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
 );
-
-// Combined reducers into rootreducer bc can't pass multiple models into createStore
