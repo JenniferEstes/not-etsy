@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { createSore, applyMiddleware, compose } from 'redux'
+import { createStore, applyMiddleware, compose } from 'redux'
 import { provider } from 'react-redux'
 import thunk from 'reux-thunk'
 // gets rid of line of code starting with window.__
