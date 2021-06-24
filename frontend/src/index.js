@@ -5,10 +5,8 @@ import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 // gets rid of line of code starting with window.__
 import { composeWithDevTools } from 'redux-devtools-extension'
-import './App'
-import categoryList from './components/categoryList'
-import favoriteList from './components/favoriteList'
-import productList from './components/productList'
+import { BrowserRouter as Router } from 'react-router-dom'
+import App from './App'
 import rootReducer from './reducers/rootReducer'
 // import './index.css'
 const store = createStore(rootReducer, compose(applyMiddleware(thunk)))
