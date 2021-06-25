@@ -5,4 +5,3 @@ export const fetchProducts = () => {
             .then(products => dispatch({ type: 'FETCH_PRODUCTS', payload: products }))
     }
 }
-
