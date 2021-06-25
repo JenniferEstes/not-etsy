@@ -12,7 +12,12 @@ export default function ProductList() {
 
     return (
         <div>
-            productList
+            <ul>
+                {productList.map(p =>
+                    <li>(p.name)</li>,
+                    <li>(p.price)</li>
+                )}
+            </ul>
         </div>
     )
 }
