@@ -8,7 +8,7 @@ import ReactImageAppear from 'react-image-appear'
 
 import '../Home.css'
 
-    // const [home, setHome] = useState("products")
+export class Home extends Component {
 
     // function renderHome() {
     //     switch (home) {
