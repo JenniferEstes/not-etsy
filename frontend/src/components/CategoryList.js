@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from 'react-redux'
-import { fetchCategories } from '../actions/categoryActions'
+import { fetchCategories } from '../actions/categoryAction'
 
 export default function CategoryList() {
     const categoryList = useSelector( state => state.categories)
