@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
 import ReactImageAppear from 'react-image-appear'
 
-export default function Home() {
+import '../Home.css'
 
     // const [home, setHome] = useState("products")
 
