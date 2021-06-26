@@ -12,8 +12,9 @@ export default function CategoryList() {
 
     return (
         <div>
+            <h1>All products</h1>
             <ul>
-                {categoryList.map(c => <li>(c.name)</li>)}
+                {categoryList.map((c, idx) => <li key={idx}>(c.name)</li>)}
             </ul>
         </div>
     )
