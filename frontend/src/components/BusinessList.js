@@ -13,11 +13,14 @@ export default function BusinessList() {
         dispatch(fetchBusinesses())
     }, [dispatch])
 
-    return (
+    return busList != null ? (
         <div>
-            <ul>
-                {busList.map(b => <li>(b.name)</li>)}
-            </ul>
+            {busList.map((b, inx) =>
+                <ul>
+                    <li key={inx}>{b.name}</li>
+                </ul>
+                // Put back button here
+            )}
         </div>
-    )
+    ) : (<div></div>)
 }
