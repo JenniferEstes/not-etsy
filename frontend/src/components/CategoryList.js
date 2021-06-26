@@ -11,7 +11,7 @@ export default function CategoryList() {
 
     useEffect(() => {
         dispatch(fetchCategories())
-    }, [])
+    }, [dispatch])
 
     return (
         <div>
