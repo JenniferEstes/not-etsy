@@ -8,7 +8,7 @@ export default function BusinessList() {
 
     useEffect(() => {
         dispatch(fetchBusinesses())
-    }, [])
+    }, [dispatch])
 
     return (
         <div>
