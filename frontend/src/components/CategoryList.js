@@ -3,7 +3,10 @@ import { useDispatch, useSelector} from 'react-redux'
 import { fetchCategories } from '../actions/categoryAction'
 
 export default function CategoryList() {
-    const categoryList = useSelector( state => state.categories)
+    // #first arg is state from store
+    // #first products is from rootReducer
+    // second products is from productActions
+    const categoryList = useSelector( state => state.categories.categories)
     const dispatch = useDispatch()
 
     useEffect(() => {
