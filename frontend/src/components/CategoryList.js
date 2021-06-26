@@ -4,8 +4,8 @@ import { fetchCategories } from '../actions/categoryAction'
 
 export default function CategoryList() {
     // #first arg is state from store
-    // #first products is from rootReducer
-    // second products is from productActions
+    // #first categories is from rootReducer
+    // second categories is from categoryActions
     const categoryList = useSelector( state => state.categories.categories)
     const dispatch = useDispatch()
 
