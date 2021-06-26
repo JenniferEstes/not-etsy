@@ -11,7 +11,7 @@ export default function ProductList() {
 
     useEffect(() => {
         dispatch(fetchProducts())
-    }, [])
+    }, [dispatch])
 
     return (
         <div>
