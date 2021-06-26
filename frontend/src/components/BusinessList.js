@@ -3,7 +3,10 @@ import { useDispatch, useSelector} from "react-redux";
 import { fetchBusinesses } from "../actions/businessActions";
 
 export default function BusinessList() {
-    const busList = useSelector( state => state.businesses)
+    // #first arg is state from store
+    // #first businesses is from rootReducer
+    // second businesses is from businessActions
+    const busList = useSelector( state => state.businesses.businesses)
     const dispatch = useDispatch()
 
     useEffect(() => {
