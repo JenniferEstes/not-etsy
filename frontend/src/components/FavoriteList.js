@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector} from 'react-redux'
+import { fetchFavorites } from '../actions/favoriteAction'
 
-function favoriteList() {
-    return (
+export default function FavoriteList() {
+    // #first arg is state from store
+    // #first favorites is from rootReducer
+    // second favorites is from favoriteActions
+    const favoriteList = useSelector( state => state.favorites.favorites)
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        dispatch(fetchFavorites())
+    }, [dispatch])
+
+    return favoriteList != null ? (
         <div>
-            favoriteList
+            {favoriteList.map((f, inx) =>
+                <ul>
+                    <li key={inx}>{f.name}</li>
+                </ul>
+            )}
         </div>
-    )
+    ) : (<div></div>)
 }
-
-export default favoriteList
