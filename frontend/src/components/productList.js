@@ -13,16 +13,16 @@ export default function ProductList() {
         dispatch(fetchProducts())
     }, [dispatch])
 
-    return (
+    return productList != null ? (
         <div>
-            <ul>
-                {productList.map(p =>
-                    <li>(p.name)</li>,
-                    <li>(p.price)</li>
-                )}
-            </ul>
+            {productList.map((p, id) =>
+                <ul>
+                    <li key={id}>{p.name}</li>
+                    <li>{p.price}</li>
+                </ul>
+            )}
         </div>
-    )
+    ) : (<div></div>)
 }
 
 
