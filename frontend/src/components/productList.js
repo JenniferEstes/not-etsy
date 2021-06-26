@@ -3,7 +3,10 @@ import { useDispatch, useSelector} from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 
 export default function ProductList() {
-    const productList = useSelector( state => state.products)
+    // #first arg is state from store
+    // #first products is from rootReducer
+    // second products is from productActions
+    const productList = useSelector(state => state.products.products)
     const dispatch = useDispatch()
 
     useEffect(() => {
