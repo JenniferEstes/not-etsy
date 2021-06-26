@@ -19,7 +19,6 @@ export default function CategoryList() {
                 <ul>
                     <li key={inx}>{c.name}</li>
                 </ul>
-                // Put back button here
             )}
         </div>
     ) : (<div></div>)
