@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from "react-redux";
-import { fetchProducts } from "../actions/productActions";
+import { fetchProducts, toggleFavorite } from "../actions/productActions";
+import Product from "./Product";
 
 export default function ProductList() {
     // #first arg is state from store
