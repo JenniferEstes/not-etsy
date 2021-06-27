@@ -1,7 +1,7 @@
-export const fetchfavorites = () => {
+export const fetchFavorites = () => {
     return (dispatch) => {
         fetch('http://localhost:3000/favorites')
             .then(resp => resp.json())
-            .then(favorites => dispatch({ type: 'FETCH_FAVORITES', payload: favorites }))
+            .then(favorites => dispatch({type: 'FETCH_FAVORITES', payload: favorites}))
     }
 }
