@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from 'react-redux'
-import { fetchFavorites } from '../actions/favoriteAction'
+import { fetchFavorites } from '../actions/favoriteActions'
 
 export default function FavoriteList() {
     // #first arg is state from store
@@ -15,11 +15,12 @@ export default function FavoriteList() {
 
     return favoriteList != null ? (
         <div>
-            {favoriteList.map((f, inx) =>
+            {favoriteList.map((product) =>
                 <ul>
-                    <li key={inx}>{f.name}</li>
+                    <li key={product.id}>{product.name}, {product.business.name}</li>
                 </ul>
             )}
         </div>
     ) : (<div></div>)
 }
+
