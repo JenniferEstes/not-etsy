@@ -14,13 +14,12 @@ export default function ProductList() {
         dispatch(fetchProducts())
     }, [dispatch])
 
+    const favoriteHandler = (product) => () => dispatch(toggleFavorite(product))
+
     return productList != null ? (
         <div>
-            {productList.map((p, id) =>
-                <ul>
-                    <li key={id}>{p.name}</li>
-                    <li>{p.price}</li>
-                </ul>
+            {productList.map((p) =>
+                <Product product={p} onClickFavorite={favoriteHandler} key={p.id} />
             )}
         </div>
     ) : (<div></div>)
