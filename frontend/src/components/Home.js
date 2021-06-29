@@ -7,9 +7,7 @@ import { Link } from 'react-router-dom'
 import ReactImageAppear from 'react-image-appear'
 import '../Home.css'
 
-export class Home extends Component {
-
-    render() {
+export default function Home() {
         return (
             <Container className="mb-5">
                 <Row className="">
