@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from "react-redux";
 import { fetchBusinesses } from "../actions/businessActions";
+import Card from 'react-bootstrap/Card'
 
 export default function BusinessList() {
     // #first arg is state from store
@@ -16,10 +17,12 @@ export default function BusinessList() {
     return busList != null ? (
         <div>
             {busList.map((b, inx) =>
-                <ul>
-                    <li key={inx}>{b.name}</li>
-                </ul>
-                // Put back button here
+                    <Card style={{ width: '18rem' }}>
+                        <div key={inx} className="business-container"></div>
+                        <Card.Body>
+                            {b.name}
+                        </Card.Body>
+                    </Card>
             )}
         </div>
     ) : (<div></div>)
