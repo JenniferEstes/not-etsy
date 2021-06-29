@@ -16,14 +16,13 @@ export default function Home() {
                         <Link to="/products">
                             <Card className="text-white bg-dark my-2 w-100">
                                 <ReactImageAppear
-                                    src="https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
+                                    src="https://images.unsplash.com/photo-1467293622093-9f15c96be70f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhpZ2glMjBlbmQlMjB2aW50YWdlJTIwY2F0ZWdvcnl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
                                     className="card-img"
                                     animation="blurIn"
                                     easing="ease-out"
                                 />
                                 <Card.ImgOverlay className="image-overlay-custom">
-                                    <Card.Title as="h1" className="text-center overlay-title-custom">Browse
-                                        Products</Card.Title>
+                                    <Card.Title as="h1" className="text-center overlay-title-custom">Browse Products</Card.Title>
                                     <Link to="/products" className="stretched-link"></Link>
                                 </Card.ImgOverlay>
                             </Card>
@@ -32,14 +31,13 @@ export default function Home() {
                     <Col sm={6}>
                         <Card className="text-white bg-dark my-2">
                             <ReactImageAppear
-                                src="https://images.unsplash.com/photo-1585909695284-32d2985ac9c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+                                src="https://images.unsplash.com/photo-1542208998-f6dbbb27a72f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&q=60"
                                 className="card-img"
                                 animation="blurIn"
                                 easing="ease-out"
                             />
                             <Card.ImgOverlay className="image-overlay-custom">
-                                <Card.Title as="h1" className="text-center overlay-title-custom">Browse
-                                    Businesses</Card.Title>
+                                <Card.Title as="h1" className="text-center overlay-title-custom">Browse Businesses</Card.Title>
                                 <Link to="/businesses" className="stretched-link"></Link>
                             </Card.ImgOverlay>
                         </Card>
@@ -49,14 +47,13 @@ export default function Home() {
                     <Col sm={{span: 6, offset: 3}}>
                         <Card className="text-white bg-dark my-2">
                             <ReactImageAppear
-                                src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1866&q=80"
+                                src="https://images.unsplash.com/photo-1503926359680-9ddd5b2bcbdc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTMxfHxpbnRlcmlvciUyMHdhbGxhcnR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60"
                                 className="card-img"
                                 animation="blurIn"
                                 easing="ease-out"
                             />
                             <Card.ImgOverlay className="image-overlay-custom">
-                                <Card.Title as="h1" className="text-center">Browse
-                                    Categories</Card.Title>
+                                <Card.Title as="h1" className="text-center">Browse Categories</Card.Title>
                                 <Link to="/categories" className="stretched-link"></Link>
                             </Card.ImgOverlay>
                         </Card>
