@@ -60,20 +60,6 @@ export default function Home() {
                     </Col>
                 </Row>
             </Container>
+            </>
         )
-    }
 }
-
-export default Home
-// import React from 'react'
-// export default function Home() {
-//
-//     return (
-//         <div>
-//             <button><NavLink to="/products">Products</NavLink></button>
-//             <button><NavLink to="/categories">Categories</NavLink></button>
-//             <button><NavLink to="/businesses">Businesses</NavLink></button>
-//         </div>
-//     )
-// }
-
