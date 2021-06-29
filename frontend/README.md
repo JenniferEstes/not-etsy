@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Not Etsy
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+Not Etsy is a single page application (SPA) created with a Ruby on Rails backend and a ReactJS frontend.
 
-## Available Scripts
+Like a customer browsing Etsy, you can browse seeded products, favorite the one's you like, and view the list of favorite products at a later time.
 
-In the project directory, you can run:
+## Usage
+View this [video](https://www.loom.com/share/ab7c09071cbf4d2c959d522d14100731?sharedAppSource=personal_library) for a brief guide through the application.
 
-### `yarn start`
+## Install Instructions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### In a terminal, navigate to the frontend directory, and execute
+`rails s`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Copy from terminal and paste in your preferred browser
+`127.0.0.1:3000`
 
-### `yarn test`
+### In a second terminal, navigate to the backend directory, and execute
+`yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Enter 'Y' to open another local server
 
-### `yarn build`
+### Copy from the second terminal and paste in another tab of your preferred browser
+`127.0.0.1:3001`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors Guide
+Consider this a safe place for collaboration. Bug reports and pull requests are welcomed. Contributors are expected to adhere to the [Contributor Covenant code of conduct](https://www.contributor-covenant.org/) for all interactions.
+<br><br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Available as open source under the terms of the [MIT License](https://github.com/JenniferEstes/not-etsy.git).
