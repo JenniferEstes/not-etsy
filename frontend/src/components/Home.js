@@ -9,6 +9,7 @@ import '../Home.css'
 
 export default function Home() {
         return (
+            <>
             <Container className="mb-5">
                 <Row className="">
                     <Col sm={6}>
