@@ -6,6 +6,7 @@ import BusinessList from './BusinessList'
 import CategoryList from './CategoryList'
 import FavoriteList from './FavoriteList'
 import ProductList from './ProductList'
+import About from './About'
 
 export const Router = () => {
     return (
@@ -15,6 +16,8 @@ export const Router = () => {
             <Route path='/categories' component={CategoryList} />
             <Route path='/favorites' component={FavoriteList} />
             <Route path='/products' component={ProductList} />
+            <Route exact path='/about' component={About} />
+
         </Switch>
     )
 }
