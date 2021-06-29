@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from 'react-redux'
 import { fetchFavorites } from '../actions/favoriteActions'
+import Card from 'react-bootstrap/Card'
+import Row from 'react-bootstrap/Row'
 
 export default function FavoriteList() {
     // #first arg is state from store
