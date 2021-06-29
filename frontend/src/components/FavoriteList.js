@@ -18,11 +18,23 @@ export default function FavoriteList() {
     return favoriteList != null ? (
         <>
             {favoriteList.map((product) =>
-                <ul>
-                    <li key={product.id}>{product.name}, {product.business.name}</li>
-                </ul>
+                <Card style={{ width: '18rem' }}>
+                    <div className="favorite-container">
+                        <Card.Img key={product.id} src={product.image} alt=""/>
+                    </div>
+                    <Card.Body>
+                        <Row>
+                            <Card.Title>{product.name}</Card.Title>
+                        </Row>
+                        <Row><Card.Subtitle className="mb-2 text-muted">{product.business.name}</Card.Subtitle>
+                        </Row>
+                        <Row>
+                            <Card.Text>${product.price}</Card.Text>
+                        </Row>
+                    </Card.Body>
+                </Card>
             )}
-        </div>
+        </>
     ) : (<div></div>)
 }
 
