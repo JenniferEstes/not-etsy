@@ -16,7 +16,7 @@ export default function FavoriteList() {
     }, [dispatch])
 
     return favoriteList != null ? (
-        <div>
+        <>
             {favoriteList.map((product) =>
                 <ul>
                     <li key={product.id}>{product.name}, {product.business.name}</li>
