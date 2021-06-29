@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
 import ReactImageAppear from 'react-image-appear'
-
 import '../Home.css'
 
 export class Home extends Component {
