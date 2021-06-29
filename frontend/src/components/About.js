@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
+import Card from 'react-bootstrap/Card'
 
 function fixedBottom() {
 
