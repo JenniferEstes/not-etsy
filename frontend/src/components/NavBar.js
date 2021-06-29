@@ -5,14 +5,18 @@ import Nav from 'react-bootstrap/Nav'
 function navBar() {
 
     return (
-        <div id='nav-bar' className='navbar'>
-            <Link to='/products'>
-                <h5 id='game'>Products</h5>
-            </Link>
-            <Link to='/favorites'>
-                <h5 id='game'>Favorites</h5>
-            </Link>
-        </div>
+        <Navbar bg="light" expand="md" className="mb-4 shadow-sm">
+            <Navbar.Brand>Not Etsy</Navbar.Brand>
+                <Nav className="mr-auto">
+                    <Nav.Link href="/">Home</Nav.Link>
+                    <Nav.Link href="/about">About</Nav.Link>
+
+                    <Nav.Link href="/products">Products</Nav.Link>
+                    <Nav.Link href="/businesses">Businesses</Nav.Link>
+                    <Nav.Link href="/categories">Categories</Nav.Link>
+                    <Nav.Link href="/favorites">Favorites</Nav.Link>
+                </Nav>
+        </Navbar>
     )
 }
 
