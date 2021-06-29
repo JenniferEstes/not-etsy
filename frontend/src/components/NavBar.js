@@ -21,3 +21,5 @@ function navBar() {
 }
 
 export default navBar
+
+// stateless component
