@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector} from 'react-redux'
 import { fetchCategories } from '../actions/categoryAction'
+import Card from 'react-bootstrap/Card'
 
 export default function CategoryList() {
     // #first arg is state from store
