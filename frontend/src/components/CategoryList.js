@@ -17,9 +17,12 @@ export default function CategoryList() {
     return categoryList != null ? (
         <div>
             {categoryList.map((c, inx) =>
-                <ul>
-                    <li key={inx}>{c.name}</li>
-                </ul>
+                <Card style={{ width: '18rem' }}>
+                    <div key={inx} className="category-container"></div>
+                    <Card.Body>
+                        {c.name}
+                    </Card.Body>
+                </Card>
             )}
         </div>
     ) : (<div></div>)
