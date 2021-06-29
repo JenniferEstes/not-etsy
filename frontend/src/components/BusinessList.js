@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { useDispatch, useSelector} from "react-redux";
-import { fetchBusinesses } from "../actions/businessActions";
+import { useDispatch, useSelector} from 'react-redux'
+import { fetchBusinesses } from '../actions/businessActions'
 import Card from 'react-bootstrap/Card'
 
 export default function BusinessList() {
