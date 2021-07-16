@@ -22,8 +22,14 @@ export default function Home() {
                                     easing="ease-out"
                                 />
                                 <Card.ImgOverlay className="image-overlay-custom">
-                                    <Card.Title as="h1" className="text-center overlay-title-custom">Browse Products</Card.Title>
-                                    <Link to="/products" className="stretched-link"></Link>
+                                    <Card.Title
+                                        as="h1"
+                                        className="text-center overlay-title-custom">Browse Products
+                                    </Card.Title>
+                                    <Link
+                                        to="/products"
+                                        className="stretched-link">
+                                    </Link>
                                 </Card.ImgOverlay>
                             </Card>
                         </Link>
@@ -37,8 +43,14 @@ export default function Home() {
                                 easing="ease-out"
                             />
                             <Card.ImgOverlay className="image-overlay-custom">
-                                <Card.Title as="h1" className="text-center overlay-title-custom">Browse Businesses</Card.Title>
-                                <Link to="/businesses" className="stretched-link"></Link>
+                                <Card.Title
+                                    as="h1"
+                                    className="text-center overlay-title-custom">Browse Businesses
+                                </Card.Title>
+                                <Link
+                                    to="/businesses"
+                                    className="stretched-link">
+                                </Link>
                             </Card.ImgOverlay>
                         </Card>
                     </Col>
@@ -53,8 +65,14 @@ export default function Home() {
                                 easing="ease-out"
                             />
                             <Card.ImgOverlay className="image-overlay-custom">
-                                <Card.Title as="h1" className="text-center">Browse Categories</Card.Title>
-                                <Link to="/categories" className="stretched-link"></Link>
+                                <Card.Title
+                                    as="h1"
+                                    className="text-center">Browse Categories
+                                </Card.Title>
+                                <Link
+                                    to="/categories"
+                                    className="stretched-link">
+                                </Link>
                             </Card.ImgOverlay>
                         </Card>
                     </Col>
