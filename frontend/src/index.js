@@ -1,11 +1,13 @@
 import React from 'react'
+// Gives access to updating and modifying virtual dom
 import ReactDOM from 'react-dom'
+// Component bridge between the Redux store and entire app
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
-// gets rid of line of code starting with window.__
 import { composeWithDevTools } from 'redux-devtools-extension'
-import { BrowserRouter as Router } from 'react-router-dom'
+// BR gives props and state on children going forward
+import  { BrowserRouter } from 'react-router-dom'
 import App from './App'
 import rootReducer from './reducers/rootReducer'
 import './index.css'
@@ -18,9 +20,9 @@ const store = createStore(
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <Router>
+            <BrowserRouter>
                 <App />
-            </Router>
+            </BrowserRouter>
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
