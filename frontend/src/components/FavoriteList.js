@@ -20,17 +20,16 @@ export default function FavoriteList() {
             {favoriteList.map((product) =>
                 <Card style={{ width: '18rem' }}>
                     <div className="favorite-container">
-                        <Card.Img key={product.id} src={product.image} alt=""/>
+                        <Card.Img
+                            key={product.id}
+                            src={product.image}
+                            alt=""
+                        />
                     </div>
                     <Card.Body>
-                        <Row>
-                            <Card.Title>{product.name}</Card.Title>
-                        </Row>
-                        <Row><Card.Subtitle className="mb-2 text-muted">{product.business.name}</Card.Subtitle>
-                        </Row>
-                        <Row>
-                            <Card.Text>${product.price}</Card.Text>
-                        </Row>
+                        <Row><Card.Title>{product.name}</Card.Title></Row>
+                        <Row><Card.Subtitle className="mb-2 text-muted">{product.business.name}</Card.Subtitle></Row>
+                        <Row><Card.Text>${product.price}</Card.Text></Row>
                     </Card.Body>
                 </Card>
             )}
