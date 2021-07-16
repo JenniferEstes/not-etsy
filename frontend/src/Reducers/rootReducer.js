@@ -1,3 +1,5 @@
+// dictates what the store is going to look like and how it's going to change
+// must be pure and not mutate original state
 import { combineReducers } from 'redux'
 import businessReducer from './businessReducer'
 import categoryReducer from './categoryReducer'
