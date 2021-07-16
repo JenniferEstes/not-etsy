@@ -1,7 +1,7 @@
+// Action is an obj with properties that contain logic to be executed on state
+// like events in that they trigger state change
 export const fetchBusinesses = () => {
-    return (dispatch) => {
-        fetch('http://localhost:3000/businesses')
+    return fetch('http://localhost:3000/businesses')
             .then(resp => resp.json())
-            .then(businesses => dispatch({ type: 'FETCH_BUSINESSES', payload: businesses }))
-    }
-}
+        // .then(resp =>
+        }
