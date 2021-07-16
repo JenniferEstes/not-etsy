@@ -27,4 +27,3 @@ function About() {
 
 export default About
 
-// stateless component
