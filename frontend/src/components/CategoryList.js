@@ -15,15 +15,19 @@ export default function CategoryList() {
     }, [dispatch])
 
     return categoryList != null ? (
-        <div>
+        <>
             {categoryList.map((c, inx) =>
                 <Card style={{ width: '18rem' }}>
-                    <div key={inx} className="category-container"></div>
+                    <div
+                        key={inx}
+                        className="category-container">
+
+                    </div>
                     <Card.Body>
                         {c.name}
                     </Card.Body>
                 </Card>
             )}
-        </div>
+        </>
     ) : (<div></div>)
 }
