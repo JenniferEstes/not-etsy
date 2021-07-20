@@ -4,7 +4,6 @@ import React from 'react'
 // route renders UI when path matches current URL
 import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
-import BusinessForm from './BusinessForm'
 import BusinessList from './BusinessList'
 import CategoryList from './CategoryList'
 import FavoriteList from './FavoriteList'
@@ -15,7 +14,6 @@ export const Router = () => {
     return (
         <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/businesses/new' component={BusinessForm} />
             <Route path='/businesses' component={BusinessList} />
             <Route path='/categories' component={CategoryList} />
             <Route path='/favorites' component={FavoriteList} />
@@ -24,5 +22,3 @@ export const Router = () => {
         </Switch>
     )
 }
-
-// stateless component
