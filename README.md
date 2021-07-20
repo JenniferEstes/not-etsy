@@ -1,7 +1,7 @@
 # Not Etsy
 
 ## Description
-Not Etsy is a single page application (SPA) created with a Ruby on Rails backend and a ReactJS frontend.
+Not Etsy is a single page application (SPA) created with a Ruby on Rails backend, as well as, a React and Redux frontend to demonstrate an understanding of the React and Redux libraries to the Flatiron School for Software Engineering.
 
 Like a customer browsing Etsy, you can browse seeded products, favorite the one's you like, and view the list of favorite products at a later time.
 
