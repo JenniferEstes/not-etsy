@@ -1,3 +1,5 @@
+// Action is an obj with properties that contain logic to be executed on state
+
 export const fetchCategories = () => {
     return (dispatch) => {
         fetch('http://localhost:3000/categories')
