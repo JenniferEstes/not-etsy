@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 // import { useDispatch, useSelector} from 'react-redux'
-import { fetchBusinesses } from '../actions/businessActions'
-// import Card from 'react-bootstrap/Card'
 import Business from './Business'
 import BusinessForm from './BusinessForm'
 
@@ -12,14 +10,13 @@ export default function BusinessList() {
     const [businesses, setBusinesses] = useState([])
 
     useEffect(() => {
-        fetchBusinesses().then(businessList =>
+        fetch('http://localhost:3000/businesses')
+            .then(resp => resp.json())
+            .then(result =>
             // With empty dependency, you would have to refresh browser to see new business
-            setBusinesses(businessList))
+            setBusinesses(result)
+            )
     })
-
-    // useEffect(() => {
-    //     fetchBusinesses()
-    // }
 
         const businessObjects = businesses.map((business) =>
         (<Business
@@ -31,7 +28,7 @@ export default function BusinessList() {
         return (
         <>
             <BusinessForm />
-            <div>{businessObjects}</div>
+            {businessObjects}
         </>
     )
 }
