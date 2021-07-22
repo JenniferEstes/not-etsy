@@ -5,9 +5,6 @@ import Card from 'react-bootstrap/Card'
 import Row from 'react-bootstrap/Row'
 
 export default function FavoriteList() {
-    // #first arg is state from store
-    // #first favorites is from rootReducer
-    // second favorites is from favoriteActions
     const favoriteList = useSelector( state => state.favorites.favorites)
     const dispatch = useDispatch()
 
